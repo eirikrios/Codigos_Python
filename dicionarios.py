@@ -16,3 +16,13 @@ print(carros.values())
 print(carros)
 
 
+estoque = {"mouse": 15,"teclado": 25,"headset": 50,"monitor": 500}
+while True:
+    produto = input("Digite o nome do produto ou fim para finalizar: ")
+    if produto=="fim":
+        break
+    if produto in estoque:
+        print(f"Preço R$ {estoque[produto]:.2f}")
+    else:
+        print("Produto não encontrado.")
+
