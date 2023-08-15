@@ -6,8 +6,9 @@ estoque = {"Snickers": [50, 3],
            "Twix": [20, 4]}
 
 total = 0
+print("Digite fim para sair\n\nVENDAS:")
 while True:
-    prod = input("Produto: ")
+    prod = input("\nProduto: ")
     if prod == "fim":
         break
     if prod in estoque:
